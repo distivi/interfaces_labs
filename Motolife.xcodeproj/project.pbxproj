@@ -13,6 +13,8 @@
 		3052073819D1AFF2008C5A83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3052073619D1AFF2008C5A83 /* Main.storyboard */; };
 		3052073A19D1AFF2008C5A83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3052073919D1AFF2008C5A83 /* Images.xcassets */; };
 		3052074619D1AFF2008C5A83 /* MotolifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3052074519D1AFF2008C5A83 /* MotolifeTests.m */; };
+		3064F9091A0C2CCE009CB829 /* BaseTopTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3064F9081A0C2CCE009CB829 /* BaseTopTableTableViewController.m */; };
+		3064F90D1A0C43BC009CB829 /* CircleBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3064F90C1A0C43BC009CB829 /* CircleBorderButton.m */; };
 		3077846319EB1D8F0095A64B /* PopSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3077846219EB1D8F0095A64B /* PopSegue.m */; };
 		3077846619EB2AF50095A64B /* ChangeMotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3077846519EB2AF50095A64B /* ChangeMotoViewController.m */; };
 		3077846919EB3A110095A64B /* Yamaha R1 2009 Owners Manual.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3077846819EB3A110095A64B /* Yamaha R1 2009 Owners Manual.pdf */; };
@@ -46,6 +48,10 @@
 		3052073F19D1AFF2008C5A83 /* MotolifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotolifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3052074419D1AFF2008C5A83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3052074519D1AFF2008C5A83 /* MotolifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotolifeTests.m; sourceTree = "<group>"; };
+		3064F9071A0C2CCE009CB829 /* BaseTopTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTopTableTableViewController.h; sourceTree = "<group>"; };
+		3064F9081A0C2CCE009CB829 /* BaseTopTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTopTableTableViewController.m; sourceTree = "<group>"; };
+		3064F90B1A0C43BC009CB829 /* CircleBorderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleBorderButton.h; sourceTree = "<group>"; };
+		3064F90C1A0C43BC009CB829 /* CircleBorderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleBorderButton.m; sourceTree = "<group>"; };
 		3077846119EB1D8F0095A64B /* PopSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopSegue.h; sourceTree = "<group>"; };
 		3077846219EB1D8F0095A64B /* PopSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopSegue.m; sourceTree = "<group>"; };
 		3077846419EB2AF50095A64B /* ChangeMotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeMotoViewController.h; sourceTree = "<group>"; };
@@ -155,6 +161,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3064F90A1A0C2CF1009CB829 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				309B336D19D1F0170046891A /* BaseTopViewController.h */,
+				309B336E19D1F0170046891A /* BaseTopViewController.m */,
+				3064F9071A0C2CCE009CB829 /* BaseTopTableTableViewController.h */,
+				3064F9081A0C2CCE009CB829 /* BaseTopTableTableViewController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		3077846019EB1D740095A64B /* Segues */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,14 +192,13 @@
 		309B336319D1B96B0046891A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3064F90A1A0C2CF1009CB829 /* Base */,
 				309B336419D1B9810046891A /* LoginViewController.h */,
 				309B336519D1B9810046891A /* LoginViewController.m */,
 				309B336719D1B98E0046891A /* SignupViewController.h */,
 				309B336819D1B98E0046891A /* SignupViewController.m */,
 				309B336A19D1BA500046891A /* MenuTableViewController.h */,
 				309B336B19D1BA500046891A /* MenuTableViewController.m */,
-				309B336D19D1F0170046891A /* BaseTopViewController.h */,
-				309B336E19D1F0170046891A /* BaseTopViewController.m */,
 				3077846419EB2AF50095A64B /* ChangeMotoViewController.h */,
 				3077846519EB2AF50095A64B /* ChangeMotoViewController.m */,
 				3077846A19EB3A6C0095A64B /* ManualViewController.h */,
@@ -196,6 +212,8 @@
 			children = (
 				309B337119D2090B0046891A /* CircleImageView.h */,
 				309B337219D2090B0046891A /* CircleImageView.m */,
+				3064F90B1A0C43BC009CB829 /* CircleBorderButton.h */,
+				3064F90C1A0C43BC009CB829 /* CircleBorderButton.m */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -337,10 +355,12 @@
 			files = (
 				309B336619D1B9810046891A /* LoginViewController.m in Sources */,
 				3077846619EB2AF50095A64B /* ChangeMotoViewController.m in Sources */,
+				3064F9091A0C2CCE009CB829 /* BaseTopTableTableViewController.m in Sources */,
 				3052073219D1AFF2008C5A83 /* AppDelegate.m in Sources */,
 				309B337319D2090B0046891A /* CircleImageView.m in Sources */,
 				3052072F19D1AFF2008C5A83 /* main.m in Sources */,
 				309B336919D1B98E0046891A /* SignupViewController.m in Sources */,
+				3064F90D1A0C43BC009CB829 /* CircleBorderButton.m in Sources */,
 				3077846319EB1D8F0095A64B /* PopSegue.m in Sources */,
 				309B336C19D1BA500046891A /* MenuTableViewController.m in Sources */,
 				3077846C19EB3A6C0095A64B /* ManualViewController.m in Sources */,

@@ -38,15 +38,7 @@
 }
 
 - (void)deregisterFromKeyboardNotifications {
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UIKeyboardDidHideNotification
-                                                  object:nil];
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UIKeyboardWillHideNotification
-                                                  object:nil];
-    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -109,7 +101,7 @@
 - (void)resetScrollFrame
 {
     _bottomConstraint.constant = 0;
-    [self.scrollView setContentOffset:CGPointZero animated:YES];
+    [self.scrollView setContentOffset:CGPointZero animated:NO];
     [self.view layoutIfNeeded];
 }
 
